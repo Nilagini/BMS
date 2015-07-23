@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BloodBankManagement</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="select">Choose a blood group</string>
+    <string name="select2">Choose an item</string>
+	<string name="button_label">Submit</string>
+	<string-array 
+	    name="bloodgroup_array">
+	 <item>select a blood group</item>
+	<item> A+ </item>
+	<item>A-</item>
+	<item >B+</item>
+	<item> B-</item>
+	</string-array>
+	
+	</resources>
+	
+	
+	
