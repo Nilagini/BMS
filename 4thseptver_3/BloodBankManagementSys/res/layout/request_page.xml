@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2" >
+
+    <Button
+        android:id="@+id/b_makerequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/sample"
+        android:textColor="#E8E8E8"
+        android:text="Make Request" />
+
+    <Button
+        android:id="@+id/req_donordetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_makerequest"
+        android:layout_alignRight="@+id/b_makerequest"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/sample"
+        android:text="Donor details"
+        android:textColor="#E8E8E8" />
+
+</RelativeLayout>
