@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"  android:stretchColumns="*" android:background="#000000">
+     <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                            <TextView
+                                android:id="@+id/donor_bg" android:text="Blood group"
+                                android:textStyle="bold"
+                                android:layout_weight="1" 
+                                android:textColor="#4aa5d4" 
+                                 android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/donor_l" android:text="Location"
+                                android:layout_weight="1" 
+                                android:textColor="#4aa5d4" 
+                                android:textStyle="bold"
+                                 android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/donor_n" android:text="Name"
+                                android:layout_weight="1" 
+                                android:textColor="#4aa5d4" 
+                                android:textStyle="bold"
+                                 android:gravity="center"/>
+                             
+                        </TableRow>
+    <ListView
+        android:id="@android:id/list"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+     </TableLayout> 
+</RelativeLayout>

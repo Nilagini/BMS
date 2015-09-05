@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2" >
+
+  <Spinner
+      android:id="@+id/d_Available"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/donor_register"
+      android:layout_marginBottom="34dp"
+      android:layout_toRightOf="@+id/textView6"
+      android:entries="@array/available_array"
+      android:prompt="@string/available1"
+      android:textColor="#E8E8E8" />
+
+  <Spinner
+      android:id="@+id/d_location"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/d_Available"
+      android:layout_alignLeft="@+id/d_bloodgroup"
+      android:layout_alignParentRight="true"
+      android:entries="@array/location_array"
+      android:prompt="@string/location11"
+      android:textColor="#E8E8E8" />
+
+  <TextView
+      android:id="@+id/textView6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignRight="@+id/textView1"
+      android:layout_alignTop="@+id/d_Available"
+      android:layout_marginTop="20dp"
+      android:text="Available"
+      android:textColor="#E8E8E8" />
+
+  <TextView
+      android:id="@+id/textView5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/d_location"
+      android:layout_alignLeft="@+id/textView3"
+      android:layout_marginBottom="15dp"
+      android:text="Available location"
+      android:textColor="#E8E8E8" />
+
+  <Spinner
+      android:id="@+id/d_bloodgroup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/d_location"
+      android:layout_toRightOf="@+id/textView5"
+      android:entries="@array/bloodgroup_array"
+      android:prompt="@string/select" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/d_bloodgroup"
+      android:layout_alignLeft="@+id/textView6"
+      android:layout_marginBottom="14dp"
+      android:text="Blood group"
+      android:textColor="#E8E8E8" />
+
+  <TextView
+      android:id="@+id/textView1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@+id/d_firstname"
+      android:layout_alignBottom="@+id/d_firstname"
+      android:layout_alignParentLeft="true"
+      android:text="first name"
+      android:textColor="#E8E8E8" />
+
+  <EditText
+      android:id="@+id/d_firstname"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentTop="true"
+      android:ems="10"
+      android:textColor="#E8E8E8" />
+
+ <TextView
+     android:id="@+id/textView3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/d_bloodgroup"
+     android:layout_alignLeft="@+id/textView4"
+     android:layout_marginBottom="26dp"
+     android:text="NIC"
+     android:textColor="#E8E8E8" />
+
+ <EditText
+     android:id="@+id/d_age"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_below="@+id/d_firstname"
+     android:ems="10"
+     android:textColor="#E8E8E8" />
+
+ <TextView
+     android:id="@+id/textView2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/d_age"
+     android:layout_alignBottom="@+id/d_age"
+     android:layout_alignRight="@+id/textView3"
+     android:text="Age"
+     android:textColor="#E8E8E8" />
+
+ <EditText
+     android:id="@+id/phone_num"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_below="@+id/d_age"
+     android:ems="10"
+     android:inputType="phone" >
+
+     <requestFocus />
+ </EditText>
+
+ <TextView
+     android:id="@+id/textView8"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/phone_num"
+     android:layout_alignBottom="@+id/phone_num"
+     android:layout_alignParentLeft="true"
+     android:text="Contact number"
+     android:textColor="#E8E8E8" />
+
+ <EditText
+     android:id="@+id/d_nic"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/textView3"
+     android:layout_alignBottom="@+id/textView3"
+     android:layout_alignParentRight="true"
+     android:ems="10"
+     android:inputType="number"
+     android:textColor="#E8E8E8" />
+
+ <Button
+     android:id="@+id/donor_register"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_marginBottom="15dp"
+     android:layout_toRightOf="@+id/textView8"
+     android:background="@drawable/sample"
+     android:text="Register"
+     android:textColor="#E8E8E8" />
+
+</RelativeLayout>
