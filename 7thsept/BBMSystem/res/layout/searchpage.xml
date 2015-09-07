@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <Button
+        android:id="@+id/bnearbyd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:onClick="nearbyDonor"
+        android:background="@drawable/sample"
+        android:text="NearbyDonors"
+         android:textSize="20dp"
+        android:textStyle="bold" 
+        android:textColor="#E8E8E8" />
+
+    <Button
+        android:id="@+id/bsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bnearbyd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/sample"
+        android:onClick="onClick"
+        android:text="AvailableDonors"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:textColor="#E8E8E8" />
+
+    <Spinner
+        android:id="@+id/searchd_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:entries="@array/location_array"
+        android:prompt="@string/location11"
+        android:textColor="#E8E8E8" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/searchd_location"
+        android:layout_alignParentLeft="true"
+        android:text="select ur location"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/searchb_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/bloodgroup_array"
+        android:prompt="@string/select"
+        android:textColor="#E8E8E8" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/searchb_group"
+        android:layout_alignParentLeft="true"
+        android:text="select the blood"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/bnearbyd"
+        android:layout_marginBottom="24dp"
+        android:text="Find donors"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

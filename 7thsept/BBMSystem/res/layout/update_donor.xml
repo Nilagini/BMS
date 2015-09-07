@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="40dp"
+         android:background="@drawable/sample2"
+         android:text="Donor Update"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#000000"
+         android:textSize="30dp"
+         android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="250dp"
+         android:layout_height="75dp"
+         android:layout_below="@+id/textView3"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="86dp"
+         android:text="Enter your contact number"
+         android:textAlignment="center"
+         android:textColor="#E8E8E8"
+         android:textSize="25dp" />
+
+     <EditText
+         android:id="@+id/d_contactdetail"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/textView1"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="14dp"
+         android:background="@drawable/backgrnd"
+         android:ems="10"
+         android:inputType="textPersonName"
+         android:textAlignment="center"
+         android:textColor="#E8E8E8" >
+
+         <requestFocus />
+     </EditText>
+
+</RelativeLayout>
